@@ -22,8 +22,10 @@ img {
   width: 100%;
 }
 .showcase {
-  background-color: $primary-color;
-  color: $text-color;
+  // background-color: $primary-color;
+  // color: set-text-color($primary-color);
+  // mixin
+  @include set-background($primary-color);
   height: 600px;
 
   nav {
@@ -38,13 +40,16 @@ img {
   li {
     padding: 15px;
   }
+  a {
+    color: set-text-color($primary-color);
+  }
   a:hover {
     color: $secondary-color;
   }
 }
-  a {
-    color: $text-color;
-  }
+  // a {
+  //   color: $text-color;
+  // }
   &-content {
     height: 100%;
     display: flex;
