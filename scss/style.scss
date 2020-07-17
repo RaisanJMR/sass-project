@@ -1,6 +1,5 @@
 @import 'config';
-@import 'utilities';
-@import 'buttons';
+
 
 
 
@@ -55,6 +54,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
     
     img {
       width: 50%;
@@ -69,4 +69,8 @@ img {
     // }
   }
 }
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
 
